@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counseling Hours - DIU Hall Portal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .counseling-hours {
+        margin-top: 20px;
+    }
+    .counseling-hours table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .counseling-hours th, .counseling-hours td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    .counseling-hours th {
+        background-color: #007bff;
+        color: #fff;
+    }
+    .appointment-form {
+        margin-top: 20px;
+    }
+    .appointment-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .appointment-form input[type="text"],
+    .appointment-form input[type="date"],
+    .appointment-form select,
+    .appointment-form textarea,
+    .appointment-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Counseling Hours</h1>
+    <p>Below are the counseling hours available for DIU Hall students:</p>
+    <div class="counseling-hours">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Counselor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Dr. Smith</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>2:00 PM - 4:00 PM</td>
+                    <td>Dr. Johnson</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Dr. Brown</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>2:00 PM - 4:00 PM</td>
+                    <td>Dr. Davis</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                    <td>Dr. Miller</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="appointment-form">
+        <h2>Schedule Counseling Appointment</h2>
+        <form action="#" method="POST">
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID">
+
+            <label for="counselor">Choose Counselor:</label>
+            <select id="counselor" name="counselor">
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Johnson">Dr. Johnson</option>
+                <option value="Dr. Brown">Dr. Brown</option>
+                <option value="Dr. Davis">Dr. Davis</option>
+                <option value="Dr. Miller">Dr. Miller</option>
+            </select>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate">
+
+            <label for="appointmentTime">Appointment Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime">
+
+            <label for="reason">Reason for Appointment:</label>
+            <textarea id="reason" name="reason" placeholder="Provide reason for counseling appointment"></textarea>
+
+            <input type="submit" value="Schedule Appointment">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

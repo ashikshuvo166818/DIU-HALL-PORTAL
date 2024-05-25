@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent's Stay Permission - DIU Hall Portal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="tel"], input[type="date"], textarea, input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 100px;
+    }
+    input[type="submit"] {
+        margin-top: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Parent's Stay Permission Request</h1>
+    <form action="#" method="POST">
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID">
+        <label for="parentName">Parent's Name:</label>
+        <input type="text" id="parentName" name="parentName" placeholder="Enter parent's name">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+        <label for="stayReason">Reason for Stay:</label>
+        <textarea id="stayReason" name="stayReason" placeholder="Provide reason for parent's stay"></textarea>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" placeholder="Provide any additional information"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

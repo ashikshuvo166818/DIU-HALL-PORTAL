@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        background-color: #252d88;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .profile-icon {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+    .menu {
+        display: none;
+        list-style: none;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        background-color: #333;
+        width: 200px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-title {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .menu li {
+        padding: 10px;
+    }
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    @media only screen and (max-width: 600px) {
+        .menu {
+            width: 100%;
+            top: 50px;
+        }
+        .menu li {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .welcome-section {
+        margin-left: 220px;
+        padding: 50px 20px;
+    }
+    @media only screen and (max-width: 600px) {
+        .welcome-section {
+            margin-left: 0;
+        }
+    }
+</style>
+</head>
+<body>
+<h1>DIU HALL PORTAL</h1>
+<div class="navbar">
+    <div class="menu-icon">&#9776;</div>
+    <a href="profile.html" class="profile-icon"><i class="fas fa-user"></i></a> <!-- Profile Icon linked to profile.html -->
+</div>
+<div class="menu">
+    <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admission_status.html">Admission Status</a></li>
+        <li><a href="payment_details.html">Payment Details</a></li>
+        <li><a href="seat_change.html">Seat Change</a></li>
+        <li><a href="seat_cancellation.html">Seat Cancel</a></li>
+        <li><a href="leave_application.html">Leave Application</a></li>
+        <li><a href="parents_stay_permission.html">Parents Stay Permission</a></li>
+        <li><a href="counselling.html">Counselling</a></li>
+        <li><a href="complain.html">Complain</a></li>
+        <li><a href="campus_store.html">Campus Store</a></li>
+        <li><a href="notice.html">Notice</a></li>
+    </ul>
+</div>
+
+<script>
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+        const menu = document.querySelector('.menu');
+        menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+    });
+</script>
+
+<div class="welcome-section">
+    <h2 style="color: aqua;">Welcome to DIU Hall Portal</h2>
+    <p>Here you can manage your profile, check your admission status, and access various hall services.</p>
+</div>
+
+</body>
+</html>

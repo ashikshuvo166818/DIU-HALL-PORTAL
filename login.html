@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to DIU Hall Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: url('diu-feature.jpg') no-repeat center center fixed; /* Replace with your image path */
+      background-size: cover;
+      flex-direction: column; /* Align content vertically */
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      text-align: center; /* Center align the content */
+      color: #000; /* Ensure text is readable on background */
+    }
+    .hostel-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff; /* Ensure the hostel name is readable on the background */
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5); /* Add text shadow for better readability */
+    }
+    .social-buttons {
+      margin-top: 20px;
+    }
+    .social-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .google-button {
+      background-color: #DB4437; /* Google Red */
+    }
+    .microsoft-button {
+      background-color: #0078D4; /* Microsoft Blue */
+    }
+    .facebook-button {
+      background-color: #3b5998; /* Facebook Blue */
+    }
+    .register-link {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hostel-name">DIU HALL PORTAL</div> <!-- Hostel name outside of the container -->
+  <div class="container">
+    <div class="title">Login</div>
+    <div class="content">
+      <form action="menu.html"> <!-- Updated action attribute -->
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Login">
+        </div>
+      </form>
+      <div class="social-buttons">
+        <button class="google-button">Login with Google</button>
+        <button class="microsoft-button">Login with Microsoft</button>
+        <button class="facebook-button">Login with Facebook</button>
+      </div>
+      <div class="register-link">Don't have an account? <a href="index.html">Register</a></div>
+    </div>
+  </div>
+</body>
+</html>

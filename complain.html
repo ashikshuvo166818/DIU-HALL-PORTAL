@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complain - DIU Hall Portal</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="file"], textarea, input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 100px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Complain</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID">
+        
+        <label for="complainType">Complain Type:</label>
+        <select id="complainType" name="complainType">
+            <option value="Facilities">Facilities</option>
+            <option value="Services">Services</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <label for="complainDetails">Complain Details:</label>
+        <textarea id="complainDetails" name="complainDetails" placeholder="Enter your complain details"></textarea>
+        
+        <label for="complainImage">Attach Image:</label>
+        <input type="file" id="complainImage" name="complainImage">
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
